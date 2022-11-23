@@ -46,8 +46,8 @@ public class MainActivity2 extends AppCompatActivity {
         });
 
         SQLiteDatabase db = getBaseContext().openOrCreateDatabase("app.db", MODE_PRIVATE, null);
-        db.execSQL("CREATE TABLE IF NOT EXISTS users (name TEXT, age INTEGER, UNIQUE(name))");
-        db.execSQL("INSERT OR IGNORE INTO users VALUES ('Tom Smith', 23), ('John Dow', 31);");
+        db.execSQL("CREATE TABLE IF NOT EXISTS users (name TEXT, age INTEGER)");
+        db.execSQL("INSERT  INTO users VALUES ('Tom Smith', 23), ('Tom Smith', 23),('Tom Smith', 23),('Tom Smith', 23),('Tom Smith', 23),('Tom Smith', 23),('Tom Smith', 23),('Tom Smith', 23),('Tom Smith', 23),('Tom Smith', 23),('Tom Smith', 23),('Tom Smith', 23),('Tom Smith', 23),('Tom Smith', 23),('Tom Smith', 23),('Tom Smith', 23),('Tom Smith', 23),('Tom Smith', 23),('Tom Smith', 23),('Tom Smith', 23),('Tom Smith', 23),('Tom Smith', 23),('Tom Smith', 23),('Tom Smith', 23),('Tom Smith', 23),('Tom Smith', 23),('Tom Smith', 23),('Tom Smith', 23),('Tom Smith', 23),('Tom Smith', 23),('Tom Smith', 23),('Tom Smith', 23),('John Dow', 31);");
 
         Cursor query = db.rawQuery("SELECT * FROM users;", null);
         TextView textView = findViewById(R.id.textView2);
